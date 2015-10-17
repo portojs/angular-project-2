@@ -4,6 +4,6 @@
 angular.module('myApp')
   .config(function($routeProvider) {
     $routeProvider.when('/about', {
-      templateUrl: '/templates/pages/about/index.html'
+      templateUrl: 'templates/pages/about/index.html'
     })
   });

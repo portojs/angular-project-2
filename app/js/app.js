@@ -5,7 +5,7 @@ angular.module('myApp', ['ngRoute'])
   .directive('mainHeader', function(){
     return {
       restrict: 'E',
-      templateUrl: '../templates/directives/main-header.html'
+      templateUrl: 'templates/directives/main-header.html'
     };
   });
 
