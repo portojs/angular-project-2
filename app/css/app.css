@@ -8,7 +8,7 @@ body {
   background-color: orange;
 }
 
-header span {
+.title {
   color: white;
   font-size: 26px;
 }
@@ -39,4 +39,25 @@ h3 {
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom: 10px solid orange;
+}
+
+a:link {
+  color: orange;
+}
+
+a:visited {
+  color: #add8e6;
+}
+
+a:hover {
+  color: forestgreen;
+}
+
+a:active {
+  color: lightcoral;
+}
+
+:focus {
+  color: white;
+  background-color: orange;
 }
