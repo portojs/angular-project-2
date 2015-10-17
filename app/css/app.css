@@ -4,8 +4,13 @@ body {
   margin: 0;
 }
 
-header {
+.main-header {
   background-color: orange;
+}
+
+header span {
+  color: white;
+  font-size: 26px;
 }
 
 h1 {
@@ -22,8 +27,12 @@ h3 {
   color: #48525c;
 }
 
-#primary-content {
-  border: 3px solid red;
+.primary-content {
+  text-align: center;
+}
+
+.t-border {
+  border-top: 2px solid lightgrey;
 }
 
 #main-footer {
