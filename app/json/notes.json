@@ -1,14 +1,22 @@
 [
   {
-    "title" : "1st note"
+    "id" : 1,
+    "title" : "1st note",
+    "content" : "follow your heart"
   },
   {
-    "title" : "2nd note"
+    "id" : 2,
+    "title" : "2nd note",
+    "content" : "be true to yourself"
   },
   {
-    "title" : "3rd note"
+    "id" : 3,
+    "title" : "3rd note",
+    "content" : "expand your horizons"
   },
   {
-    "title" : "4th note"
+    "id" : 4,
+    "title" : "4th note",
+    "content" : "journey before destination"
   }
 ]

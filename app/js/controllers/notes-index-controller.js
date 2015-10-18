@@ -4,7 +4,8 @@
 angular.module('myApp')
   .controller('NotesIndexController', function($http) {
     var controller = this;
-    $http({method: 'GET', url: 'json/notes.json'}).success(function(data) {
-      controller.notes = data;
-    });
+    $http({method: 'GET', url: 'json/notes.json'})
+      .success(function(data) {
+        controller.notes = data;
+      });
   });

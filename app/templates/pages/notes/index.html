@@ -1,6 +1,7 @@
 <div class="notes">
   <h2>Notes</h2>
-  <a class="card-notes" ng-repeat="note in indexController.notes">
-    <div>{{note.title}}</div>
+  <a class="card-notes" ng-repeat="note in indexController.notes" ng-href="#/notes/{{note.id}}">
+    <p>Note ID: {{note.id}}</p>
+    <p>Note Title: {{note.title}}</p>
   </a>
 </div>

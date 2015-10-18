@@ -10,14 +10,12 @@ angular.module('myApp')
       .when('/notes', {
         templateUrl: 'templates/pages/notes/index.html',
         controller: 'NotesIndexController',
-
-        //  function($http) {
-        //  var controller = this;
-        //  $http({method: 'GET', url: 'json/notes.json'}).success(function(data) {
-        //    controller.notes = data;
-        //  });
-        //},
         controllerAs: 'indexController'
+      })
+      .when('/notes/:id', {
+        templateUrl: 'templates/pages/notes/show.html',
+        controller: 'NotesShowController',
+        controllerAs: 'showController'
       })
       .when('/users', {
         templateUrl: 'templates/pages/users/index.html'
