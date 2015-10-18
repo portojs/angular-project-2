@@ -18,11 +18,15 @@ h1 {
 h2 {
   font-size: 53px;
   font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: .5em; /* 26px / 53px */
 }
 
 h3 {
   font-size: 20px;
   color: #48525c;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px / 20px */
 }
 
 p {
@@ -83,8 +87,14 @@ a:active {
 /* Layout styles */
 
 .primary-content,
-.secondary-content {
+.secondary-content,
+.footer {
   width: 60%;
+  margin: auto;
+}
+
+.footer {
+  text-align: center;
 }
 
 .wildlife {
@@ -92,4 +102,5 @@ a:active {
   background-color: #434a52;
   padding: 18% 24%;
   border-top: 10px solid #ffa949;
+  margin: 105px 0 60px;
 }
