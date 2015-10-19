@@ -78,6 +78,7 @@ img {
 .secondary-content {
   padding-top: 80px;
   padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
 }
 
 .callout {
@@ -161,4 +162,16 @@ a:active {
 
 .resorts {
   float: left;
+}
+
+
+
+/*****************************************
+ FLOAT CLEARFIX
+ *****************************************/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
