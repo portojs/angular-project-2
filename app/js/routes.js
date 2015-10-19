@@ -12,6 +12,11 @@ angular.module('myApp')
         controller: 'NotesIndexController',
         controllerAs: 'indexController'
       })
+      .when('/notes/edit', {
+        templateUrl: 'templates/pages/notes/edit.html',
+        controller: 'NotesCreateController',
+        controllerAs: 'createController'
+      })
       .when('/notes/:id', {
         templateUrl: 'templates/pages/notes/show.html',
         controller: 'NotesShowController',
