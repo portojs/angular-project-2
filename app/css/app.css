@@ -53,10 +53,10 @@ img {
  *****************************************/
 
 .main-header {
-  background: #ffa949 url('../img/mountains.jpg') no-repeat;
-  background-size: 40%;
   padding-top: 170px;
   height: 850px;
+  background: #ffa949 url('../img/mountains.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .title {
