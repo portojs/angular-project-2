@@ -48,6 +48,8 @@ img {
   border-bottom: 10px solid #ffa949;
 }
 
+
+
 /*****************************************
  MAIN STYLES
  *****************************************/
@@ -110,7 +112,11 @@ a:active {
   background-color: #ffa949;
 }
 
-/* Layout styles */
+
+
+/*****************************************
+ LAYOUT STYLES
+ *****************************************/
 
 .primary-content,
 .secondary-content,
@@ -136,4 +142,23 @@ a:active {
 
 .arrow {
   width: 50px;
+}
+
+
+
+/*****************************************
+ FLOATED COLUMNS
+ *****************************************/
+
+.resorts,
+.tips {
+  width: 46.5%;
+}
+
+.tips {
+  float: right;
+}
+
+.resorts {
+  float: left;
 }
