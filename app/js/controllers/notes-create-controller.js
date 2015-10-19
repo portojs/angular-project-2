@@ -4,9 +4,10 @@
 angular.module('myApp')
   .controller('NotesCreateController', function($http) {
     var controller = this;
+    controller.note = {};
     this.saveNote = function(note) {
       controller.errors = null;
-      $http({method: 'POST', url: 'json/notes.json', data: note})
+      $http({method: 'PUT', url: 'json/notes.json', data: note})
         .catch(function(note) {
           controller.errors = note.data.error;
         });
