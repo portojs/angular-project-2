@@ -45,6 +45,7 @@ h3 {
   background-color: #ffa949;
   padding-top: 170px;
   height: 850px;
+  box-sizing: border-box;
 }
 
 .title {
@@ -104,6 +105,7 @@ a:active {
 .secondary-content,
 .footer {
   width: 960px;
+  box-sizing: border-box;
   padding-left: 50px;
   padding-right: 50px;
   margin: auto;
