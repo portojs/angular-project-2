@@ -103,7 +103,9 @@ a:active {
 .primary-content,
 .secondary-content,
 .footer {
-  width: 60%;
+  width: 960px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin: auto;
 }
 
@@ -117,4 +119,8 @@ a:active {
   padding: 18% 24%;
   border-top: 10px solid #ffa949;
   margin: 105px 0 60px;
+}
+
+.arrow {
+  width: 50px;
 }
