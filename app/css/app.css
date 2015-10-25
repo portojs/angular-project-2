@@ -70,10 +70,7 @@ li {
   margin-bottom: 10px;
 }
 
-
-/* ID Selectors */
-
-#main-footer {
+.main-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom: 10px solid #ffa949;
@@ -224,12 +221,48 @@ a:active {
  MEDIA QUERIES
  *****************************************/
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
+  .primary-content,
+  .secondary-content {
+    width: 90%;
+  }
+  .wildlife {
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+  }
 }
 
-@media (max-width: 480px) {
-}
-
-@media (min-width: 481px) and (max-width: 700px) {
-  
+@media (max-width: 768px) {
+  .primary-content,
+  .secondary-content {
+    width: 100%;
+    padding: 20px;
+    border-top: none;
+  }
+  .main-header {
+    max-height: 380px;
+    padding: 50px 25px 0;
+  }
+  .title {
+    font-size: 1.3em;
+    border: none;
+  }
+  h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+  }
+  .arrow {
+    display: none;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+  .resorts,
+  .tips {
+    float: none;
+    width: 100%;
+  }
+  .main-footer {
+    padding: 20px 0;
+  }
 }
