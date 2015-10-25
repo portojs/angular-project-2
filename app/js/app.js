@@ -9,13 +9,19 @@ angular.module('myApp', ['ngRoute'])
     };
   })
   .directive('myappCard', function(){
-    var num = 1;
     return {
       restrict: 'E',
       templateUrl: 'templates/directives/card.html',
-      scope: {},
-      controller: function($scope){
-        $scope.header = "Note Header" + num++;
+      scope: {
+        id: "=",
+        title: "=",
+        content: "="
+      },
+      link: function(scope, element, attrs){
+        element.on('click', function(){
+          element.find('p').toggleClass('hidden');
+        });
+        console.log(attrs.title);
       }
     };
   });

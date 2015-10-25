@@ -1,8 +1,6 @@
 <div class="notes">
   <h2>Notes</h2>
-  <a class="card-notes" ng-repeat="note in indexController.notes" ng-href="#/notes/{{note.id}}">
-    <myapp-card title="{{note.title}}"></myapp-card>
-    <myapp-card></myapp-card>
-    <myapp-card></myapp-card>
-  </a>
+  <div class="card-notes" ng-repeat="note in indexController.notes" ng-href="#/notes/{{note.id}}">
+    <myapp-card title="note.title" id="note.id" content="note.content"></myapp-card>
+  </div>
 </div>
