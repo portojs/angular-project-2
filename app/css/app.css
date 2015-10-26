@@ -268,6 +268,25 @@ a:active {
 }
 
 
+
+/*****************************************
+ ATTRIBUTE SELECTORS
+ *****************************************/
+
+[class] {
+  color: red;
+}
+
+[class="resorts"] {
+  background-color: #D2E0E6;
+}
+
+div[class="tips"] {
+  color: deepskyblue;
+}
+
+
+
 /*************************/
 .card {
   position: relative;
