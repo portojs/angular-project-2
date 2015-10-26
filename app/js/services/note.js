@@ -2,7 +2,7 @@
  * Created by Peter on 26.10.2015.
  */
 angular.module('myApp')
-  .factory('Note', function NoteFactory($http, Note){
+  .factory('Note', function NoteFactory($http){
     return {
       all: function() {
         return $http({method: 'GET', url: 'json/notes.json'});
