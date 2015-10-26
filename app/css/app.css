@@ -301,6 +301,24 @@ a[target="_blank"] {
 
 
 
+/*****************************************
+ DRY CLASSES
+ *****************************************/
+
+.br {
+  border-radius: .5em;
+}
+
+.avatar {
+  display: block;
+  margin: 0 auto 2em;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+
 /*************************/
 .card {
   position: relative;
