@@ -25,6 +25,9 @@ angular.module('myApp')
       .when('/users', {
         templateUrl: 'templates/pages/users/index.html'
       })
+      .when('/contact', {
+        templateUrl: 'templates/pages/about/contact.html'
+      })
       .when('/', {
         templateUrl: 'templates/pages/about/index.html'
       })

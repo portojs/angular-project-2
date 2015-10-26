@@ -273,16 +273,30 @@ a:active {
  ATTRIBUTE SELECTORS
  *****************************************/
 
-[class] {
-  color: red;
+.form-contact {
+  padding: 20px 24px;
+  background: #f4f7f8;
 }
 
-[class="resorts"] {
-  background-color: #D2E0E6;
+#container {
+  max-width: 500px;
+  margin: auto;
 }
 
-div[class="tips"] {
-  color: deepskyblue;
+input[type="email"] {
+  background: #fdfee6;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+a[target="_blank"] {
+  color: #39add1;
+  text-decoration: none;
+  border-bottom: 1px dotted;
 }
 
 
