@@ -376,6 +376,14 @@ h1 ~ label {
   border: none;
 }
 
+span:only-child {
+  color: #52bab3;
+  font-size: 1.5em;
+}
+
+.nunito-list :empty {
+  background-color: tomato;
+}
 
 
 /*************************/
