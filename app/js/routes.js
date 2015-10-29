@@ -28,6 +28,9 @@ angular.module('myApp')
       .when('/contact', {
         templateUrl: 'templates/pages/about/contact.html'
       })
+      .when('/list', {
+        templateUrl: 'templates/pages/about/list.html'
+      })
       .when('/', {
         templateUrl: 'templates/pages/about/index.html'
       })

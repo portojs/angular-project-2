@@ -362,6 +362,22 @@ h1 ~ label {
 }
 
 
+
+/*****************************************
+ STRUCTURAL PSEUDO-CLASSES
+ *****************************************/
+
+.nunito-list li:first-child {
+  background: #52bab3;
+  color: white;
+}
+
+.nunito-list li:last-child {
+  border: none;
+}
+
+
+
 /*************************/
 .card {
   position: relative;
