@@ -1,0 +1,26 @@
+[
+  {
+    "id" : 1,
+    "name" : "Bob",
+    "email" : "bob@gmail.com",
+    "bio" : "A sturdy fellow"
+  },
+  {
+    "id" : 2,
+    "name" : "Jameson",
+    "email" : "jameson@gmail.com",
+    "bio" : "Always drunk"
+  },
+  {
+    "id" : 3,
+    "name" : "Bill",
+    "email" : "bill@gmail.com",
+    "bio" : "Has knives in his boots"
+  },
+  {
+    "id" : 4,
+    "name" : "George",
+    "email" : "george@gmail.com",
+    "bio" : "Wears a long coat"
+  }
+]

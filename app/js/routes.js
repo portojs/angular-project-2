@@ -23,7 +23,9 @@ angular.module('myApp')
         controllerAs: 'showController'
       })
       .when('/users', {
-        templateUrl: 'templates/pages/users/index.html'
+        templateUrl: 'templates/pages/users/index.html',
+        controller: 'UsersIndexController',
+        controllerAs: 'userController'
       })
       .when('/contact', {
         templateUrl: 'templates/pages/about/contact.html'

@@ -1,3 +1,10 @@
 <div class="users">
   <h2>Users</h2>
+  <a ng-repeat="user in users" ng-href="#">
+    <myapp-card header="user.name"
+                image="gravatarUrl(user.email)"
+                body="user.bio"
+                id="user.id">
+    </myapp-card>
+  </a>
 </div>

@@ -13,9 +13,10 @@ angular.module('myApp', ['ngRoute'])
       restrict: 'E',
       templateUrl: 'templates/directives/card.html',
       scope: {
-        id: "=",
-        title: "=",
-        content: "="
+        header: "=",
+        body: "=",
+        image: "=",
+        id: "="
       },
       link: function(scope, element, attrs){
         element.on('click', function(){
