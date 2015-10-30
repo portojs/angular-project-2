@@ -5,7 +5,7 @@ angular.module('myApp')
   .factory('User', [ '$http', function UserFactory($http){
     return {
       all: function() {
-        $http({method: 'GET', url: 'json/users.json'});
+        return $http({method: 'GET', url: 'json/users.json'});
       }
     }
   }]);
