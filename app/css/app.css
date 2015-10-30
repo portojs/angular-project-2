@@ -376,7 +376,7 @@ h1 ~ label {
   border: none;
 }
 
-span:only-child {
+.nunito-list span:only-child {
   color: #52bab3;
   font-size: 1.5em;
 }
@@ -384,6 +384,34 @@ span:only-child {
 .nunito-list :empty {
   background-color: tomato;
 }
+
+
+
+/*****************************************
+ SUBSTRING MATCHING ATTRIBUTE SELECTORS
+ *****************************************/
+
+.gallery a[href^="http:"] {
+  color: #52bab3;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  padding-left: 25px;
+}
+
+.gallery a[href$=".pdf"] {
+  background-image: url('../img/icn-pdf.svg');
+}
+
+.gallery a[href$=".jpg"] {
+  background-image: url('../img/icn-picture.svg');
+}
+
+.gallery a[href$=".zip"] {
+  background-image: url('../img/icn-zip.svg');
+}
+
+
 
 
 /*************************/
