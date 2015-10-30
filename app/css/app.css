@@ -446,6 +446,16 @@ h1 ~ label {
 }
 
 
+
+/*****************************************
+ UI ELEMENT STATES PSEUDO-CLASSES
+ *****************************************/
+
+.nunito-list2 li:nth-child(even) {
+  background: #52bab3;
+  color: white;
+}
+
 /*************************/
 .card {
   position: relative;
