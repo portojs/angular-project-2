@@ -1,7 +1,10 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', ['ngRoute'])
+angular.module('myApp', ['ngRoute', 'ngResource'])
+  .config(function(GravatarProvider){
+    GravatarProvider.setSize(150);
+  })
   .directive('mainHeader', function(){
     return {
       restrict: 'E',

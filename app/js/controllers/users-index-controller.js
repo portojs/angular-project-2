@@ -6,7 +6,7 @@ angular.module('myApp')
     $scope.gravatarUrl = function(email) {
       return Gravatar(email);
     };
-    User.all()
+    User()
       .success(function(data) {
         $scope.users = data;
       });
