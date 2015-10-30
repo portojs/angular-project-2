@@ -30,6 +30,9 @@ angular.module('myApp')
       .when('/contact', {
         templateUrl: 'templates/pages/about/contact.html'
       })
+      .when('/contact2', {
+        templateUrl: 'templates/pages/about/contact2.html'
+      })
       .when('/list', {
         templateUrl: 'templates/pages/about/list.html'
       })

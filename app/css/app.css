@@ -428,6 +428,24 @@ h1 ~ label {
 
 
 
+/*****************************************
+ UI ELEMENT STATES PSEUDO-CLASSES
+ *****************************************/
+
+.contact2 input:focus,
+.contact2 textarea:focus {
+  border-color: #52bab3;
+}
+
+.contact2 input:disabled {
+  background: #ddd;
+}
+
+.contact2 input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+
+
 /*************************/
 .card {
   position: relative;
