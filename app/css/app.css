@@ -394,9 +394,6 @@ h1 ~ label {
 .gallery a[href^="http:"] {
   color: #52bab3;
   text-decoration: none;
-  background-repeat: no-repeat;
-  background-size: 18px 18px;
-  padding-left: 25px;
 }
 
 .gallery a[href$=".pdf"] {
@@ -411,6 +408,23 @@ h1 ~ label {
   background-image: url('../img/icn-zip.svg');
 }
 
+.gallery a[href*="downloads"] {
+  background-repeat: no-repeat;
+  background-size: 17px 17px;
+  padding-left: 25px;
+}
+
+.gallery img[src*="thumb"] {
+  margin: 4px;
+  border: solid 2px;
+  border-radius: 0;
+  width: 180px;
+  height: 140px;
+}
+
+.gallery img[src*="lake"] {
+  border-color: red;
+}
 
 
 
