@@ -521,12 +521,12 @@ h1 ~ label {
  FIRST-LINE & FIRST-CHARACTER
  *****************************************/
 
-#columns .intro::first-line {
+.gallery2 .intro::first-line {
   font-weight: bold;
   font-size: 1.4em;
 }
 
-#columns .intro::first-letter {
+.gallery2 .intro::first-letter {
   float: left;
   font-size: 80px;
   color: white;
@@ -538,6 +538,32 @@ h1 ~ label {
 }
 
 
+
+/*****************************************
+ BEFORE & AFTER
+ *****************************************/
+
+.gallery2 .jpg::before {
+  content: url(../img/icn-picture2.svg);
+  margin-right: 8px;
+}
+
+.gallery2 .zip::before {
+  content: url(../img/icn-zip2.svg);
+  margin-right: 8px;
+}
+
+.gallery2 h1::before,
+.gallery2 h1::after
+{
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: coral;
+  margin: 0 10px;
+}
 
 /*************************/
 .card {

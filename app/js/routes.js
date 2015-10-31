@@ -48,6 +48,9 @@ angular.module('myApp')
       .when('/gallery', {
         templateUrl: 'templates/pages/about/gallery.html'
       })
+      .when('/gallery2', {
+        templateUrl: 'templates/pages/about/gallery2.html'
+      })
       .when('/', {
         templateUrl: 'templates/pages/about/index.html'
       })
