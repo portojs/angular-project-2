@@ -572,3 +572,8 @@ h1 ~ label {
 .hidden {
   display: none;
 }
+.active {
+  background: #585bab;
+  color: white;
+  font-weight: bold;
+}

@@ -21,11 +21,47 @@ angular.module('myApp', ['ngRoute', 'ngResource'])
         image: "=",
         id: "="
       },
-      link: function(scope, element, attrs){
+      link: function(scope, element, attrs) {
         element.on('click', function(){
           element.find('p').toggleClass('hidden');
         });
         console.log(attrs.title);
       }
     };
+  })
+  .directive('myappCategorySelect', function(Category) {
+    return {
+      replace: true,
+      restrict: 'E',
+      templateUrl: 'templates/directives/myapp-category-select.html',
+      link: function(scope, element, attrs) {
+        scope.categories = Category.query();
+      },
+      controller: function($scope) {
+        this.getActiveCategory = function() {
+          return $scope.activeCategory;
+        };
+        this.setActiveCategory = function(category) {
+          $scope.activeCategory = category.name;
+        };
+      }
+    }
+  })
+  .directive('myappCategoryItem', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'templates/directives/myapp-category-item.html',
+      scope: {
+        category: '='
+      },
+      require: "^myappCategorySelect",
+      link: function(scope, element, attrs, myappCategorySelect) {
+        scope.makeActive = function() {
+          myappCategorySelect.setActiveCategory(scope.category);
+        };
+        scope.categoryActive = function() {
+          return myappCategorySelect.getActiveCategory() === scope.category.name;
+        };
+      }
+    }
   });
