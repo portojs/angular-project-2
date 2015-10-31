@@ -448,13 +448,42 @@ h1 ~ label {
 
 
 /*****************************************
- UI ELEMENT STATES PSEUDO-CLASSES
+ :NTH-CHILD PSEUDO-CLASSES
  *****************************************/
 
 .nunito-list2 li:nth-child(even) {
   background: #52bab3;
   color: white;
 }
+
+.nunito-list2 li:nth-child(3n+3) {
+  background: #52cab3;
+  color: white;
+}
+
+.nunito-list2 li:nth-child(3n) {
+  color: red;
+}
+
+.nunito-list2 li:nth-child(-n+3) {
+  font-weight: bold;
+}
+
+
+
+/*****************************************
+ STRUCTURAL PSEUDO-CLASSES
+ *****************************************/
+
+.nunito-list3 div:nth-of-type(even) {
+  background: #52bab3;
+  color: white;
+}
+
+.nunito-list3 div:nth-last-of-type(2) {
+  color: tomato;
+}
+
 
 /*************************/
 .card {
