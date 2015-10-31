@@ -3,7 +3,11 @@
  */
 angular.module('myApp')
   .factory('Note', function NoteFactory($resource){
-    return $resource("/notes/:id", {}, {});
+    return $resource("json/notes.json", {}, {
+      update: {
+        method: 'PUT'
+      }
+    });
     //  all: function() {
     //    return $http({method: 'GET', url: 'json/notes.json'});
     //  },
