@@ -42,6 +42,9 @@ angular.module('myApp')
       .when('/list3', {
         templateUrl: 'templates/pages/about/list3.html'
       })
+      .when('/columns', {
+        templateUrl: 'templates/pages/about/columns.html'
+      })
       .when('/gallery', {
         templateUrl: 'templates/pages/about/gallery.html'
       })
