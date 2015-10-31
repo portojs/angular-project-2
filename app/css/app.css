@@ -487,7 +487,7 @@ h1 ~ label {
 
 
 /*****************************************
- ROOT & TARGET
+ ROOT & TARGET & NOT
  *****************************************/
 
 :root {
@@ -503,6 +503,16 @@ h1 ~ label {
   background: #eff1f2;
   color: initial;
   box-shadow: 0 0 6px rgba(0,0,0, .2);
+}
+
+#columns input:not([type="submit"]) {
+  box-shadow: inset 0 2px 0 rgba(0,0,0, .15);
+}
+
+#columns .col:not(:first-child),
+#columns nav a:not(:first-child)
+{
+  margin-left: 15px;
 }
 
 
