@@ -54,6 +54,9 @@ angular.module('myApp')
       .when('/form', {
         templateUrl: 'templates/pages/about/form.html'
       })
+      .when('/table', {
+        templateUrl: 'templates/pages/about/table.html'
+      })
       .when('/', {
         templateUrl: 'templates/pages/about/index.html'
       })
