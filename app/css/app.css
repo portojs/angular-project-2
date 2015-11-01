@@ -565,6 +565,16 @@ h1 ~ label {
   margin: 0 10px;
 }
 
+.gallery2 .d-loads a::after {
+  content: attr(href);
+  display: inline-block;
+  color: initial;
+  font-size: .65em;
+  margin-left: 5px;
+}
+
+
+
 /*************************/
 .card {
   position: relative;
