@@ -1,11 +1,14 @@
 <div class="users">
   <h2>Users</h2>
-  <a ng-repeat="user in users" ng-href="#">
+  <label for="user_search">Search Users:</label>
+  <input id="user_search" ng-model="search.name"/>
+  <a ng-repeat="user in users | filter:{category: activeCategory} | filter: search" ng-href="#">
     <myapp-card header="user.name"
                 image="gravatarUrl(user.email)"
                 body="user.bio"
-                id="user.id">
+                id="user.id"
+                category="user.category">
     </myapp-card>
   </a>
-  <myapp-category-select></myapp-category-select>
+  <myapp-category-select active-category="activeCategory"></myapp-category-select>
 </div>

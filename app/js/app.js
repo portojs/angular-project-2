@@ -19,7 +19,8 @@ angular.module('myApp', ['ngRoute', 'ngResource'])
         header: "=",
         body: "=",
         image: "=",
-        id: "="
+        id: "=",
+        category: "="
       },
       link: function(scope, element, attrs) {
         element.on('click', function(){
@@ -34,6 +35,9 @@ angular.module('myApp', ['ngRoute', 'ngResource'])
       replace: true,
       restrict: 'E',
       templateUrl: 'templates/directives/myapp-category-select.html',
+      scope: {
+        activeCategory: "="
+      },
       link: function(scope, element, attrs) {
         scope.categories = Category.query();
       },

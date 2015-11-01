@@ -3,24 +3,28 @@
     "id" : 1,
     "name" : "Bob",
     "email" : "bob@gmail.com",
-    "bio" : "A sturdy fellow"
+    "bio" : "A sturdy fellow",
+    "category" : "Hippie"
   },
   {
     "id" : 2,
     "name" : "Jameson",
     "email" : "jameson@gmail.com",
-    "bio" : "Always drunk"
+    "bio" : "Always drunk",
+    "category" : "Yappie"
   },
   {
     "id" : 3,
     "name" : "Bill",
     "email" : "bill@gmail.com",
-    "bio" : "Has knives in his boots"
+    "bio" : "Has knives in his boots",
+    "category" : "Yappie"
   },
   {
     "id" : 4,
     "name" : "George",
     "email" : "george@gmail.com",
-    "bio" : "Wears a long coat"
+    "bio" : "Wears a long coat",
+    "category" : "Gangster"
   }
 ]
