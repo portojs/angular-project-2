@@ -587,3 +587,11 @@ h1 ~ label {
   color: white;
   font-weight: bold;
 }
+.table-body {
+  margin: auto;
+}
+.table-body th,
+.table-body td {
+  padding: 10px;
+  text-align: left;
+}
