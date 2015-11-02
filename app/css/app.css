@@ -608,3 +608,7 @@ h1 ~ label {
   font-size: 0.75em;
   font-style: italic;
 }
+.table-body caption {
+  font-size: 2em;
+  font-weight: 400;
+}
