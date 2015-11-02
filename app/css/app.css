@@ -594,4 +594,12 @@ h1 ~ label {
 .table-body td {
   padding: 10px;
   text-align: left;
+  width: 20%;
+}
+.table-body thead tr {
+  background: #808080;
+  color: white;
+}
+.table-body tr:nth-child(even) {
+  background: lightgrey;
 }
