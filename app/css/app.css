@@ -603,3 +603,8 @@ h1 ~ label {
 .table-body tr:nth-child(even) {
   background: lightgrey;
 }
+.table-body tfoot {
+  color: #808080;
+  font-size: 0.75em;
+  font-style: italic;
+}
